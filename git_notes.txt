@@ -1,0 +1,31 @@
+git clone https://github.com/nidhit27/dbset2026.git
+
+
+C:\DEV2022\NIDHI\dbset2026>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mysql_notes.txt
+
+C:\DEV2022\NIDHI\dbset2026>git add .
+
+
+C:\DEV2022\NIDHI\dbset2026>git commit -m "Startup Mysql server steps"
+[main (root-commit) 0b2344d] Startup Mysql server steps
+ 1 file changed, 35 insertions(+)
+ create mode 100644 mysql_notes.txt
+
+C:\DEV2022\NIDHI\dbset2026>git push
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 651 bytes | 651.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nidhit27/dbset2026.git
+ * [new branch]      main -> main
+
