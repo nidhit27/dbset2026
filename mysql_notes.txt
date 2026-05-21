@@ -1,0 +1,35 @@
+
+mysqld --init-file=C:\DEV2022\NIDHI\pyt\init-mysqlpass.txt --console
+
+
+mysqld --init-file=C:\DEV2022\NIDHI\pyt\init-mysqlpass.txt --host=127.0.0.1
+
+C:\SW\mysql8\bin>mysql -u root -p
+Enter password: *****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.46 MySQL Community Server - GPL
+
+- -
+mysql> CREATE USER 'nidhi'@'localhost' IDENTIFIED BY 'nidhi123';
+
+mysql> CREATE DATABASE studentrep
+
+mysql> GRANT ALL ON studentrep.* TO 'nidhi'@'localhost';
+
+mysql> CREATE TABLE Persons (
+    ->   PersonID int PRIMARY KEY,
+    ->   LastName varchar(255) NOT NULL,
+    ->   FirstName varchar(255),
+    ->   Address varchar(255),
+    ->   City varchar(255)
+    -> )
+    ->
+    -> ^C
+mysql> CREATE TABLE Students (
+    ->   studentid int PRIMARY KEY,
+    ->   Name varchar(255) NOT NULL,
+    ->   City varchar(255)
+    -> );
+
+
